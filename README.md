@@ -1,2 +1,1 @@
-# atal-uwl
-ATAL website
+# Alan Turing and Ada Lovelace UWL website
