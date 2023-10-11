@@ -3365,7 +3365,10 @@ table.alt tfoot {
 }
 
 .wrapper.style1 {
-	background-color: #6fc84b;
+	background-image: -moz-linear-gradient(to bottom right, #69C18F, #2F828D 50%, #2684C6 50%, #6fcf84);
+	background-image: -webkit-linear-gradient(to bottom right, #69C18F, #2F828D 50%, #2684C6 50%, #6fcf84);
+	background-image: -ms-linear-gradient(to bottom right, #69C18F, #2F828D 50%, #2684C6 50%, #6fcf84);
+	background: linear-gradient(to bottom right, #69C18F, #2F828D 50%, #2684C6 50%, #6fcf84);
 }
 
 .wrapper.style1-alt {
@@ -4000,7 +4003,7 @@ body.is-preload #sidebar nav ul li {
 
 #intro {
 	background-attachment: fixed;
-	background-image: url("images/intro.svg");
+	/* background-image: url("images/intro.svg"); */
 	background-position: top right;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
