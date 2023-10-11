@@ -2095,6 +2095,30 @@ button:hover:active:after,
 	opacity: 0.1;
 }
 
+/* ATAL Logo */
+#main-logo {
+	position: relative;
+	right: 3.5rem;
+	width: 150%;
+	height: auto;
+	max-height: 250px;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 2100px) {
+
+	#main-logo {
+		position: relative;
+		right: 8rem;
+		width: 200%;
+		height: auto;
+		max-height: 400px;
+		margin: 0 auto;
+	}
+
+}
+
+
 /* Features */
 
 .features {
@@ -2930,6 +2954,7 @@ ul.icons {
 	cursor: default;
 	list-style: none;
 	padding-left: 0;
+	font-size: 1.5em;
 }
 
 ul.icons li {
@@ -3498,7 +3523,7 @@ body.is-preload .wrapper.fade>.inner {
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
-	background-color: #5e42a6;
+	background-color: #312450;
 	cursor: default;
 	padding: 1.75em 2em;
 }
@@ -3890,14 +3915,14 @@ body.is-ie #sidebar>.inner {
 }
 
 #sidebar nav a:before {
-	background: #3c2c62;
+	background: rgba(255, 255, 255, 0.55);
 }
 
 #sidebar nav a:after {
-	background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-	background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-	background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-	background-image: linear-gradient(to right, #5e42a6, #b74e91);
+	background-image: -moz-linear-gradient(to right, #6fc84b, #2f828d);
+	background-image: -webkit-linear-gradient(to right, #6fc84b, #2f828d);
+	background-image: -ms-linear-gradient(to right, #6fc84b, #2f828d);
+	background-image: linear-gradient(to right, #6fc84b, #2f828d);
 	-moz-transition: max-width 0.2s ease;
 	-webkit-transition: max-width 0.2s ease;
 	-ms-transition: max-width 0.2s ease;
@@ -3932,12 +3957,12 @@ body.is-preload #sidebar nav ul li {
 @media screen and (max-width: 1280px) {
 
 	#sidebar {
-		height: 3.5em;
+		height: 5em;
 		left: 0;
-		line-height: 3.5em;
+		line-height: 5em;
 		overflow: hidden;
 		padding: 0;
-		text-align: center;
+		text-align: left;
 		top: 0;
 		width: 100%;
 	}
@@ -3950,14 +3975,27 @@ body.is-preload #sidebar nav ul li {
 		-moz-align-items: -moz-stretch;
 		-webkit-align-items: -webkit-stretch;
 		-ms-align-items: -ms-stretch;
-		align-items: stretch;
+		justify-content: flex-start;
+		align-items: center;
 		height: inherit;
 		line-height: inherit;
+		padding-left: 1em;
+		/* Added padding to the left */
+	}
+
+	#main-logo {
+		width: 150px;
+		height: auto;
+		max-height: 4em;
+		margin: 0;
+		padding: 0;
+
 	}
 
 	#sidebar nav {
 		height: inherit;
 		line-height: inherit;
+		margin-left: 35rem;
 	}
 
 	#sidebar nav ul {
@@ -3968,6 +4006,7 @@ body.is-preload #sidebar nav ul li {
 		height: inherit;
 		line-height: inherit;
 		margin: 0;
+		padding-right: 1em;
 	}
 
 	#sidebar nav ul li {
@@ -3988,7 +4027,28 @@ body.is-preload #sidebar nav ul li {
 		background-image: none;
 		background-color: #b74e91;
 	}
+}
 
+@media screen and (max-width: 1190px) {
+	#sidebar nav {
+		margin-left: 20rem;
+	}
+
+	#main-logo {
+		right: 0;
+	}
+}
+
+@media screen and (max-width: 946px) {
+	#sidebar nav {
+		margin-left: 15rem;
+	}
+}
+
+@media screen and (max-width: 862px) {
+	#sidebar nav {
+		margin-left: 7.5rem;
+	}
 }
 
 @media screen and (max-width: 736px) {
