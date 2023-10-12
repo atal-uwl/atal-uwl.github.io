@@ -189,7 +189,10 @@ html {
 }
 
 body {
-	background: #312450;
+	background-image: -moz-linear-gradient(to right, #6fc84b, #2f828d);
+	background-image: -webkit-linear-gradient(to right, #6fc84b, #2f828d);
+	background-image: -ms-linear-gradient(to right, #6fc84b, #2f828d);
+	background-image: linear-gradient(to right, #6fc84b, #2f828d);
 }
 
 body.is-preload *,
@@ -2105,6 +2108,16 @@ button:hover:active:after,
 	margin: 0 auto;
 }
 
+#main-logo-small {
+	position: relative;
+	right: 1.5rem;
+	bottom: 2rem;
+	width: 70%;
+	height: auto;
+	max-height: 150px;
+	margin: 0 auto;
+}
+
 @media screen and (min-width: 2100px) {
 
 	#main-logo {
@@ -3386,7 +3399,10 @@ table.alt tfoot {
 }
 
 .wrapper.alt {
-	background-color: #261c3e;
+	background-image: -moz-linear-gradient(to right, #6fc84b, #2f828d);
+	background-image: -webkit-linear-gradient(to right, #6fc84b, #2f828d);
+	background-image: -ms-linear-gradient(to right, #6fc84b, #2f828d);
+	background-image: linear-gradient(to right, #6fc84b, #2f828d);
 }
 
 .wrapper.style1 {
@@ -3523,7 +3539,10 @@ body.is-preload .wrapper.fade>.inner {
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
-	background-color: #312450;
+	background-image: -moz-linear-gradient(to right, #6fc84b, #2f828d);
+	background-image: -webkit-linear-gradient(to right, #6fc84b, #2f828d);
+	background-image: -ms-linear-gradient(to right, #6fc84b, #2f828d);
+	background-image: linear-gradient(to right, #6fc84b, #2f828d);
 	cursor: default;
 	padding: 1.75em 2em;
 }
@@ -3980,7 +3999,6 @@ body.is-preload #sidebar nav ul li {
 		height: inherit;
 		line-height: inherit;
 		padding-left: 1em;
-		/* Added padding to the left */
 	}
 
 	#main-logo {
