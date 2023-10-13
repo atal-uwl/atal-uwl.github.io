@@ -4132,3 +4132,8 @@ body.is-preload #sidebar nav ul li {
 	color: white;
 	text-decoration: solid;
 }
+
+.icon:hover,
+.custom_links:hover {
+	color: #3e4094;
+}
